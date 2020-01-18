@@ -6,6 +6,7 @@ public class ListNode {
  }
 **/
 class Solution {
+    //In this solution I have not made a new linked  but modified the existing in that manner without extra space because with extra space it is easy
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         //The base condition if one of the list is empty so then return the other list as it is.
         if (l1 == null)
@@ -32,7 +33,7 @@ class Solution {
                 ans = ans.next;
             }
         }
-	//if list are not same then one list will be left to traverse
+        //if list are not same then one list will be left to traverse
         if (l1 == null && l2 != null)
             ans.next = l2;
         if (l2 == null && l1 != null)
